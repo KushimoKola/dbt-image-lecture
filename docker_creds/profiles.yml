@@ -1,0 +1,15 @@
+my_package:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      #for Windows
+      host: host.docker.internal
+      #for Mac
+      #host: docker.for.mac.host.internal
+      user: postgres
+      password: oyindamola
+      port: 5432
+      dbname: dbt_tut
+      schema: april_tut
+      threads: 4

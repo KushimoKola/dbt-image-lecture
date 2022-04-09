@@ -1,0 +1,8 @@
+
+    truncate table "dbt_tut"."april_tut_seeds"."seed_a";
+    -- dbt seed --
+    
+          insert into "dbt_tut"."april_tut_seeds"."seed_a" ("name", "b") values
+          (%s,%s),(%s,%s)
+      
+  

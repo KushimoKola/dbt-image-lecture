@@ -1,0 +1,28 @@
+name: 'dbt_poc'
+version: '1.0'
+
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project. Profiles contain
+# database connection information, and should be configured in the  ~/.dbt/profiles.yml file
+profile: 'my_package'
+
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["data"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+    - "target"
+    - "dbt_modules"
+
+
+models:
+  my_package:
+
+
+seeds:
+  +schema: seeds

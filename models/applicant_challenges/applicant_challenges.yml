@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: applicant_challenges
+    description: This table contain applicants info with their respective challenge scores.
+    
+    columns:
+      - name: row_num
+        description: This is a rollup of the number of instances an applicant applied
+
+      - name: applicant_id
+        description: This is a unique identifer for applicants

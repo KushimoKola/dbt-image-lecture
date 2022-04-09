@@ -1,0 +1,5 @@
+psycopg2-binary
+pip
+setuptools
+wheel
+dbt-postgres==1.0.3

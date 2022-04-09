@@ -1,0 +1,10 @@
+
+    
+    create table "microverse_th"."kkush_seeds"."seed_a" ("name" text,"b" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "microverse_th"."kkush_seeds"."seed_a" ("name", "b") values
+          (%s,%s),(%s,%s)
+      
+  

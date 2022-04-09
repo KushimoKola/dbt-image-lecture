@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: applicants
+    decription: This is a union of all applicant
+
+    columns:
+      - name: applicant_id
+        description: This is a unique id for applicants
+
+      - name: last_step
+        description: The most recent step in the appication process of an applicant
+
+      - name: country
+        description: The country an applicant is located
+
+      - name: gender
+        dscription: The gender of an applicant
