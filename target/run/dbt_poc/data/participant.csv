@@ -1,0 +1,10 @@
+
+    
+    create table "dbt_tut"."april_tut_seeds"."participant" ("s/n" integer,"name" text,"gender" text)
+  ;
+    -- dbt seed --
+    
+          insert into "dbt_tut"."april_tut_seeds"."participant" ("s/n", "name", "gender") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+  
