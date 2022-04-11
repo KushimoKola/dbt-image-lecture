@@ -4,12 +4,12 @@ my_package:
     dev:
       type: postgres
       #for Windows
-      host: host.docker.internal
+      #host: host.docker.internal
       #for Mac
-      #host: docker.for.mac.host.internal
+      host: docker.for.mac.host.internal
       user: postgres
-      password: oyindamola
+      password: Colymore0900
       port: 5432
-      dbname: dbt_tut
-      schema: april_tut
+      dbname: dbt-practice
+      schema: dbt-practice-data
       threads: 4
