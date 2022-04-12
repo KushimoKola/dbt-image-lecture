@@ -1,0 +1,10 @@
+
+    
+    create table "dbt-practice"."dbt-practice-data_seeds"."participant" ("s/n" integer,"name" text,"gender" text)
+  ;
+    -- dbt seed --
+    
+          insert into "dbt-practice"."dbt-practice-data_seeds"."participant" ("s/n", "name", "gender") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+  
