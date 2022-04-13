@@ -12402,3 +12402,2470 @@ drop view if exists "dbt-practice"."dbt-practice-data"."applicant_challenges__db
 00:53:08.782146 [info ] [MainThread]: 
 00:53:08.784199 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 00:53:08.786717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8b9fb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb6947fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb40e6d90>]}
+
+
+============================== 2022-04-13 00:55:49.578485 | d024e4ec-9f97-4b3b-aeab-0e0b86f8aaa5 ==============================
+00:55:49.578485 [info ] [MainThread]: Running with dbt=1.0.3
+00:55:49.579650 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['job_activities'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:55:49.581462 [debug] [MainThread]: Tracking: tracking
+00:55:49.585876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3421eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3421ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3421d00>]}
+00:55:49.641425 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+00:55:49.643577 [debug] [MainThread]: Partial parsing: updated file: dbt_practice://models/job_activites.sql
+00:55:49.652293 [debug] [MainThread]: 1699: static parser successfully parsed job_activites.sql
+00:55:49.674277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd024e4ec-9f97-4b3b-aeab-0e0b86f8aaa5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2aa1f70>]}
+00:55:49.691042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd024e4ec-9f97-4b3b-aeab-0e0b86f8aaa5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa334d970>]}
+00:55:49.692973 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:55:49.695690 [warn ] [MainThread]: The selection criterion 'job_activities' does not match any nodes
+00:55:49.697706 [info ] [MainThread]: 
+00:55:49.699566 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+00:55:49.717065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa345aa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3321af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa334dc70>]}
+
+
+============================== 2022-04-13 00:56:15.699521 | 2d6cff5f-143e-4d82-bc30-855dd2928930 ==============================
+00:56:15.699521 [info ] [MainThread]: Running with dbt=1.0.3
+00:56:15.700664 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['+job_activities'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:56:15.702744 [debug] [MainThread]: Tracking: tracking
+00:56:15.707701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81fb6820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81fb6ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81fb6a60>]}
+00:56:15.766795 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+00:56:15.769369 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+00:56:15.774948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d6cff5f-143e-4d82-bc30-855dd2928930', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81e380d0>]}
+00:56:15.794523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d6cff5f-143e-4d82-bc30-855dd2928930', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81ea07c0>]}
+00:56:15.796693 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:56:15.799051 [warn ] [MainThread]: The selection criterion '+job_activities' does not match any nodes
+00:56:15.801805 [info ] [MainThread]: 
+00:56:15.804679 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+00:56:15.824720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81ea0d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81ea0ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81ea0e80>]}
+
+
+============================== 2022-04-13 00:56:53.453697 | 1ac0b834-5584-4166-8b97-e2cbc0c19c87 ==============================
+00:56:53.453697 [info ] [MainThread]: Running with dbt=1.0.3
+00:56:53.456154 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['job_activities'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:56:53.458992 [debug] [MainThread]: Tracking: tracking
+00:56:53.464099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5cd4820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5cd4ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5cd4a60>]}
+00:56:53.518354 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+00:56:53.520658 [debug] [MainThread]: Partial parsing: added file: dbt_practice://models/job_activities.sql
+00:56:53.522293 [debug] [MainThread]: Partial parsing: deleted file: dbt_practice://models/job_activites.sql
+00:56:53.530607 [debug] [MainThread]: 1699: static parser successfully parsed job_activities.sql
+00:56:53.550874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ac0b834-5584-4166-8b97-e2cbc0c19c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5307fa0>]}
+00:56:53.568297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ac0b834-5584-4166-8b97-e2cbc0c19c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5bbc850>]}
+00:56:53.569937 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:56:53.572819 [info ] [MainThread]: 
+00:56:53.574907 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:56:53.577207 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+00:56:53.585187 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+00:56:53.588020 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+00:56:53.589686 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:56:53.600852 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+00:56:53.603940 [debug] [ThreadPool]: On list_dbt-practice: Close
+00:56:53.607352 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:56:53.607725 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+00:56:53.612552 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:56:53.615195 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:56:53.616733 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+00:56:53.619634 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+00:56:53.618217 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+00:56:53.623676 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:56:53.629004 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:56:53.631036 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:56:53.631126 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:56:53.632901 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+00:56:53.634764 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:56:53.638215 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+00:56:53.644457 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+00:56:53.645363 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.01 seconds
+00:56:53.646827 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+00:56:53.649310 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+00:56:53.651708 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+00:56:53.654020 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+00:56:53.661612 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.663785 [debug] [MainThread]: On master: BEGIN
+00:56:53.665705 [debug] [MainThread]: Opening a new connection, currently in state init
+00:56:53.673352 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:56:53.675269 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.676713 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+00:56:53.710267 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+00:56:53.714088 [debug] [MainThread]: On master: ROLLBACK
+00:56:53.717097 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.719338 [debug] [MainThread]: On master: BEGIN
+00:56:53.722046 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+00:56:53.723300 [debug] [MainThread]: On master: COMMIT
+00:56:53.724771 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.726457 [debug] [MainThread]: On master: COMMIT
+00:56:53.728369 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:56:53.730229 [debug] [MainThread]: On master: Close
+00:56:53.731977 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+00:56:53.733899 [info ] [MainThread]: 
+00:56:53.748077 [debug] [Thread-1  ]: Began running node model.dbt_practice.job_activities
+00:56:53.750647 [info ] [Thread-1  ]: 1 of 1 START view model dbt-practice-data.job_activities........................ [RUN]
+00:56:53.753111 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+00:56:53.755547 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.job_activities
+00:56:53.758108 [debug] [Thread-1  ]: Compiling model.dbt_practice.job_activities
+00:56:53.761608 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+00:56:53.767688 [debug] [Thread-1  ]: finished collecting timing info
+00:56:53.769937 [debug] [Thread-1  ]: Began executing node model.dbt_practice.job_activities
+00:56:53.783240 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+00:56:53.788961 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:56:53.791341 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: BEGIN
+00:56:53.792957 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+00:56:53.800291 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+00:56:53.802607 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:56:53.804260 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  'job activities' AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activites AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM 'job activities'
+  )
+
+SELECT * FROM job_activities
+  );
+00:56:53.806619 [debug] [Thread-1  ]: Postgres adapter: Postgres error: syntax error at or near "'job activities'"
+LINE 5:   'job activities' AS ( SELECT * FROM "dbt-practice"."dbt-pr...
+          ^
+
+00:56:53.808380 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: ROLLBACK
+00:56:53.810947 [debug] [Thread-1  ]: finished collecting timing info
+00:56:53.812767 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: Close
+00:56:53.814469 [debug] [Thread-1  ]: Database Error in model job_activities (models/job_activities.sql)
+  syntax error at or near "'job activities'"
+  LINE 5:   'job activities' AS ( SELECT * FROM "dbt-practice"."dbt-pr...
+            ^
+  compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:56:53.816724 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ac0b834-5584-4166-8b97-e2cbc0c19c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa423bdf0>]}
+00:56:53.818913 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt-practice-data.job_activities............... [[31mERROR[0m in 0.06s]
+00:56:53.820890 [debug] [Thread-1  ]: Finished running node model.dbt_practice.job_activities
+00:56:53.824298 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:56:53.827867 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.829801 [debug] [MainThread]: On master: BEGIN
+00:56:53.831569 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:56:53.840543 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:56:53.842840 [debug] [MainThread]: On master: COMMIT
+00:56:53.844882 [debug] [MainThread]: Using postgres connection "master"
+00:56:53.847022 [debug] [MainThread]: On master: COMMIT
+00:56:53.849580 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:56:53.851610 [debug] [MainThread]: On master: Close
+00:56:53.853739 [info ] [MainThread]: 
+00:56:53.855992 [info ] [MainThread]: Finished running 1 view model in 0.28s.
+00:56:53.858034 [debug] [MainThread]: Connection 'master' was properly closed.
+00:56:53.860580 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+00:56:53.862650 [debug] [MainThread]: Connection 'list_dbt-practice_dbt-practice-data' was properly closed.
+00:56:53.897644 [info ] [MainThread]: 
+00:56:53.899584 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+00:56:53.901803 [info ] [MainThread]: 
+00:56:53.904378 [error] [MainThread]: [33mDatabase Error in model job_activities (models/job_activities.sql)[0m
+00:56:53.906703 [error] [MainThread]:   syntax error at or near "'job activities'"
+00:56:53.908871 [error] [MainThread]:   LINE 5:   'job activities' AS ( SELECT * FROM "dbt-practice"."dbt-pr...
+00:56:53.912120 [error] [MainThread]:             ^
+00:56:53.914692 [error] [MainThread]:   compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:56:53.917764 [info ] [MainThread]: 
+00:56:53.936783 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+00:56:53.940607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa70c20d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa70c2070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa70c2820>]}
+
+
+============================== 2022-04-13 00:57:40.177663 | 6b5fe112-d4f6-43ff-8aa5-d634bddf50bf ==============================
+00:57:40.177663 [info ] [MainThread]: Running with dbt=1.0.3
+00:57:40.179893 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['job_activities'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:57:40.182103 [debug] [MainThread]: Tracking: tracking
+00:57:40.186553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b509850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b5099d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b509f10>]}
+00:57:40.245609 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+00:57:40.248038 [debug] [MainThread]: Partial parsing: updated file: dbt_practice://models/job_activities.sql
+00:57:40.256568 [debug] [MainThread]: 1699: static parser successfully parsed job_activities.sql
+00:57:40.277004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b5fe112-d4f6-43ff-8aa5-d634bddf50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ab480d0>]}
+00:57:40.293328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b5fe112-d4f6-43ff-8aa5-d634bddf50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b3d3c70>]}
+00:57:40.295548 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:57:40.297829 [info ] [MainThread]: 
+00:57:40.299843 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:57:40.302421 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+00:57:40.309266 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+00:57:40.311033 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+00:57:40.313508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:57:40.323786 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+00:57:40.326565 [debug] [ThreadPool]: On list_dbt-practice: Close
+00:57:40.329690 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+00:57:40.329959 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:57:40.335501 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:57:40.337937 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:57:40.341309 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+00:57:40.339800 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+00:57:40.342587 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:57:40.344192 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+00:57:40.355142 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:57:40.355390 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:57:40.359271 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:57:40.357177 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:57:40.361289 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+00:57:40.363154 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+00:57:40.367779 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+00:57:40.370250 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+00:57:40.370346 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+00:57:40.373219 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+00:57:40.374916 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+00:57:40.379876 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+00:57:40.386330 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.389269 [debug] [MainThread]: On master: BEGIN
+00:57:40.391615 [debug] [MainThread]: Opening a new connection, currently in state init
+00:57:40.399106 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:57:40.400872 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.403078 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+00:57:40.431714 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+00:57:40.435227 [debug] [MainThread]: On master: ROLLBACK
+00:57:40.438403 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.440375 [debug] [MainThread]: On master: BEGIN
+00:57:40.442979 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+00:57:40.444524 [debug] [MainThread]: On master: COMMIT
+00:57:40.445909 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.447897 [debug] [MainThread]: On master: COMMIT
+00:57:40.449732 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:57:40.450868 [debug] [MainThread]: On master: Close
+00:57:40.452550 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+00:57:40.454627 [info ] [MainThread]: 
+00:57:40.460369 [debug] [Thread-1  ]: Began running node model.dbt_practice.job_activities
+00:57:40.462707 [info ] [Thread-1  ]: 1 of 1 START view model dbt-practice-data.job_activities........................ [RUN]
+00:57:40.465209 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+00:57:40.467830 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.job_activities
+00:57:40.469299 [debug] [Thread-1  ]: Compiling model.dbt_practice.job_activities
+00:57:40.472124 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+00:57:40.480641 [debug] [Thread-1  ]: finished collecting timing info
+00:57:40.482641 [debug] [Thread-1  ]: Began executing node model.dbt_practice.job_activities
+00:57:40.497527 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+00:57:40.503468 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:57:40.505628 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: BEGIN
+00:57:40.506968 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+00:57:40.514589 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+00:57:40.516015 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:57:40.517597 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  jobactivities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activites AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM jobactivities
+  )
+
+SELECT * FROM job_activities
+  );
+00:57:40.520617 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "job_activities" does not exist
+LINE 18: SELECT * FROM job_activities
+                       ^
+
+00:57:40.521966 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: ROLLBACK
+00:57:40.524180 [debug] [Thread-1  ]: finished collecting timing info
+00:57:40.526750 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: Close
+00:57:40.528955 [debug] [Thread-1  ]: Database Error in model job_activities (models/job_activities.sql)
+  relation "job_activities" does not exist
+  LINE 18: SELECT * FROM job_activities
+                         ^
+  compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:57:40.531086 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6b5fe112-d4f6-43ff-8aa5-d634bddf50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7824e760>]}
+00:57:40.532825 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt-practice-data.job_activities............... [[31mERROR[0m in 0.07s]
+00:57:40.534801 [debug] [Thread-1  ]: Finished running node model.dbt_practice.job_activities
+00:57:40.537800 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:57:40.540634 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.542956 [debug] [MainThread]: On master: BEGIN
+00:57:40.544970 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:57:40.554215 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:57:40.556203 [debug] [MainThread]: On master: COMMIT
+00:57:40.557996 [debug] [MainThread]: Using postgres connection "master"
+00:57:40.560251 [debug] [MainThread]: On master: COMMIT
+00:57:40.562678 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:57:40.564581 [debug] [MainThread]: On master: Close
+00:57:40.566823 [info ] [MainThread]: 
+00:57:40.568548 [info ] [MainThread]: Finished running 1 view model in 0.27s.
+00:57:40.571195 [debug] [MainThread]: Connection 'master' was properly closed.
+00:57:40.573960 [debug] [MainThread]: Connection 'list_dbt-practice_dbt-practice-data' was properly closed.
+00:57:40.576136 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+00:57:40.593192 [info ] [MainThread]: 
+00:57:40.595640 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+00:57:40.597934 [info ] [MainThread]: 
+00:57:40.600448 [error] [MainThread]: [33mDatabase Error in model job_activities (models/job_activities.sql)[0m
+00:57:40.602386 [error] [MainThread]:   relation "job_activities" does not exist
+00:57:40.604918 [error] [MainThread]:   LINE 18: SELECT * FROM job_activities
+00:57:40.607524 [error] [MainThread]:                          ^
+00:57:40.609919 [error] [MainThread]:   compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:57:40.613101 [info ] [MainThread]: 
+00:57:40.616202 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+00:57:40.618447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ab22f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7824ef40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff79a8c610>]}
+
+
+============================== 2022-04-13 00:58:27.414442 | f16c04e5-bdb3-406e-8398-b569d462d7a2 ==============================
+00:58:27.414442 [info ] [MainThread]: Running with dbt=1.0.3
+00:58:27.415751 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=['+job_activities'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:58:27.417942 [debug] [MainThread]: Tracking: tracking
+00:58:27.423608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a1fb0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a1fba00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a1fb9a0>]}
+00:58:27.481705 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+00:58:27.484061 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+00:58:27.489827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f16c04e5-bdb3-406e-8398-b569d462d7a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a0750d0>]}
+00:58:27.508386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f16c04e5-bdb3-406e-8398-b569d462d7a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a0ec790>]}
+00:58:27.510880 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:58:27.516065 [info ] [MainThread]: 
+00:58:27.517860 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:58:27.520368 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+00:58:27.528322 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+00:58:27.531133 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+00:58:27.533396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:58:27.542823 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+00:58:27.545709 [debug] [ThreadPool]: On list_dbt-practice: Close
+00:58:27.549414 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:27.549882 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:27.554153 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:27.557186 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:27.558862 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+00:58:27.561314 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+00:58:27.563121 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+00:58:27.564750 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:58:27.574105 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:58:27.575950 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:27.578214 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+00:58:27.576473 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:58:27.581452 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:27.582792 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+00:58:27.583464 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+00:58:27.587196 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+00:58:27.588087 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+00:58:27.590731 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+00:58:27.592876 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+00:58:27.596153 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+00:58:27.603718 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.605915 [debug] [MainThread]: On master: BEGIN
+00:58:27.608254 [debug] [MainThread]: Opening a new connection, currently in state init
+00:58:27.616662 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:58:27.619345 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.621686 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+00:58:27.658227 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+00:58:27.661069 [debug] [MainThread]: On master: ROLLBACK
+00:58:27.663945 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.666180 [debug] [MainThread]: On master: BEGIN
+00:58:27.668464 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+00:58:27.669748 [debug] [MainThread]: On master: COMMIT
+00:58:27.671357 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.672994 [debug] [MainThread]: On master: COMMIT
+00:58:27.675103 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:58:27.676441 [debug] [MainThread]: On master: Close
+00:58:27.678513 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+00:58:27.680641 [info ] [MainThread]: 
+00:58:27.686648 [debug] [Thread-1  ]: Began running node model.dbt_practice.job_activities
+00:58:27.689462 [info ] [Thread-1  ]: 1 of 1 START view model dbt-practice-data.job_activities........................ [RUN]
+00:58:27.692259 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+00:58:27.694744 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.job_activities
+00:58:27.697590 [debug] [Thread-1  ]: Compiling model.dbt_practice.job_activities
+00:58:27.701016 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+00:58:27.707581 [debug] [Thread-1  ]: finished collecting timing info
+00:58:27.710223 [debug] [Thread-1  ]: Began executing node model.dbt_practice.job_activities
+00:58:27.725129 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+00:58:27.730655 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:58:27.732671 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: BEGIN
+00:58:27.734118 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+00:58:27.741567 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+00:58:27.743202 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:58:27.744476 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  jobactivities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activites AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM jobactivities
+  )
+
+SELECT * FROM job_activities
+  );
+00:58:27.747032 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "job_activities" does not exist
+LINE 18: SELECT * FROM job_activities
+                       ^
+
+00:58:27.748471 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: ROLLBACK
+00:58:27.750483 [debug] [Thread-1  ]: finished collecting timing info
+00:58:27.752350 [debug] [Thread-1  ]: On model.dbt_practice.job_activities: Close
+00:58:27.754488 [debug] [Thread-1  ]: Database Error in model job_activities (models/job_activities.sql)
+  relation "job_activities" does not exist
+  LINE 18: SELECT * FROM job_activities
+                         ^
+  compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:58:27.757322 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f16c04e5-bdb3-406e-8398-b569d462d7a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8878e310>]}
+00:58:27.759163 [error] [Thread-1  ]: 1 of 1 ERROR creating view model dbt-practice-data.job_activities............... [[31mERROR[0m in 0.07s]
+00:58:27.761100 [debug] [Thread-1  ]: Finished running node model.dbt_practice.job_activities
+00:58:27.765046 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:58:27.767913 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.770844 [debug] [MainThread]: On master: BEGIN
+00:58:27.772943 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:58:27.781526 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:58:27.783734 [debug] [MainThread]: On master: COMMIT
+00:58:27.786161 [debug] [MainThread]: Using postgres connection "master"
+00:58:27.787936 [debug] [MainThread]: On master: COMMIT
+00:58:27.790397 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:58:27.791912 [debug] [MainThread]: On master: Close
+00:58:27.793947 [info ] [MainThread]: 
+00:58:27.796489 [info ] [MainThread]: Finished running 1 view model in 0.28s.
+00:58:27.798934 [debug] [MainThread]: Connection 'master' was properly closed.
+00:58:27.801181 [debug] [MainThread]: Connection 'list_dbt-practice_dbt-practice-data_seeds' was properly closed.
+00:58:27.803144 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+00:58:27.822243 [info ] [MainThread]: 
+00:58:27.824248 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+00:58:27.826195 [info ] [MainThread]: 
+00:58:27.828647 [error] [MainThread]: [33mDatabase Error in model job_activities (models/job_activities.sql)[0m
+00:58:27.830569 [error] [MainThread]:   relation "job_activities" does not exist
+00:58:27.833422 [error] [MainThread]:   LINE 18: SELECT * FROM job_activities
+00:58:27.835654 [error] [MainThread]:                          ^
+00:58:27.838564 [error] [MainThread]:   compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:58:27.841590 [info ] [MainThread]: 
+00:58:27.844327 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+00:58:27.847309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a0103d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8a0153d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff887909d0>]}
+
+
+============================== 2022-04-13 00:58:53.331085 | 71a9fe10-9798-4604-8ae8-3b4d298f149d ==============================
+00:58:53.331085 [info ] [MainThread]: Running with dbt=1.0.3
+00:58:53.332119 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+00:58:53.333740 [debug] [MainThread]: Tracking: tracking
+00:58:53.338824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91056880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91056a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff910569d0>]}
+00:58:53.390805 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+00:58:53.392875 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+00:58:53.398662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '71a9fe10-9798-4604-8ae8-3b4d298f149d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90ed20d0>]}
+00:58:53.416751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71a9fe10-9798-4604-8ae8-3b4d298f149d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90f48760>]}
+00:58:53.419136 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+00:58:53.422199 [info ] [MainThread]: 
+00:58:53.424411 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:58:53.426645 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+00:58:53.433616 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+00:58:53.436281 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+00:58:53.438519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:58:53.448005 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+00:58:53.451430 [debug] [ThreadPool]: On list_dbt-practice: Close
+00:58:53.455364 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:53.456343 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:53.460586 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:53.463795 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:53.467867 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+00:58:53.465868 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+00:58:53.469491 [debug] [ThreadPool]: Opening a new connection, currently in state init
+00:58:53.471685 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+00:58:53.479713 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:58:53.482241 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+00:58:53.481650 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+00:58:53.483969 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+00:58:53.485448 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+00:58:53.489683 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+00:58:53.491494 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+00:58:53.494836 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+00:58:53.495680 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+00:58:53.498141 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+00:58:53.500668 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+00:58:53.502563 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+00:58:53.510302 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.512587 [debug] [MainThread]: On master: BEGIN
+00:58:53.515043 [debug] [MainThread]: Opening a new connection, currently in state init
+00:58:53.523269 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:58:53.525716 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.528257 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+00:58:53.560220 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+00:58:53.563603 [debug] [MainThread]: On master: ROLLBACK
+00:58:53.565774 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.568195 [debug] [MainThread]: On master: BEGIN
+00:58:53.570699 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+00:58:53.572048 [debug] [MainThread]: On master: COMMIT
+00:58:53.573136 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.574496 [debug] [MainThread]: On master: COMMIT
+00:58:53.576511 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:58:53.577818 [debug] [MainThread]: On master: Close
+00:58:53.580039 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+00:58:53.581592 [info ] [MainThread]: 
+00:58:53.588099 [debug] [Thread-1  ]: Began running node model.dbt_practice.applicants
+00:58:53.588272 [debug] [Thread-2  ]: Began running node model.dbt_practice.job_activities
+00:58:53.591381 [info ] [Thread-1  ]: 1 of 3 START view model dbt-practice-data.applicants............................ [RUN]
+00:58:53.594962 [info ] [Thread-2  ]: 2 of 3 START view model dbt-practice-data.job_activities........................ [RUN]
+00:58:53.600350 [debug] [Thread-2  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+00:58:53.597535 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.applicants"
+00:58:53.602973 [debug] [Thread-2  ]: Began compiling node model.dbt_practice.job_activities
+00:58:53.605286 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.applicants
+00:58:53.607748 [debug] [Thread-2  ]: Compiling model.dbt_practice.job_activities
+00:58:53.609314 [debug] [Thread-1  ]: Compiling model.dbt_practice.applicants
+00:58:53.612588 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+00:58:53.616972 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.applicants"
+00:58:53.624459 [debug] [Thread-2  ]: finished collecting timing info
+00:58:53.626164 [debug] [Thread-1  ]: finished collecting timing info
+00:58:53.626865 [debug] [Thread-2  ]: Began executing node model.dbt_practice.job_activities
+00:58:53.629255 [debug] [Thread-1  ]: Began executing node model.dbt_practice.applicants
+00:58:53.642512 [debug] [Thread-2  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+00:58:53.644326 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.applicants"
+00:58:53.650624 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:58:53.652305 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.652888 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: BEGIN
+00:58:53.654515 [debug] [Thread-1  ]: On model.dbt_practice.applicants: BEGIN
+00:58:53.658284 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+00:58:53.656416 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+00:58:53.666260 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+00:58:53.668293 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.668518 [debug] [Thread-2  ]: SQL status: BEGIN in 0.01 seconds
+00:58:53.670197 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" as (
+    WITH
+  seed_applicant_1 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ),
+  seed_applicant_2 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ),
+  seed_applicant_3 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ),
+  seed_applicant_4 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ),
+  --seed_job_activities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+  --seed_students AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."students" ),
+
+applicants AS (
+  SELECT 
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_1
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_2
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_3
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_4
+)
+SELECT * FROM applicants
+  );
+00:58:53.671832 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+00:58:53.674671 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  jobactivities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activites AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM jobactivities
+  )
+
+SELECT * FROM job_activities
+  );
+00:58:53.677645 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "job_activities" does not exist
+LINE 18: SELECT * FROM job_activities
+                       ^
+
+00:58:53.679409 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: ROLLBACK
+00:58:53.681222 [debug] [Thread-2  ]: finished collecting timing info
+00:58:53.682549 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: Close
+00:58:53.684508 [debug] [Thread-2  ]: Database Error in model job_activities (models/job_activities.sql)
+  relation "job_activities" does not exist
+  LINE 18: SELECT * FROM job_activities
+                         ^
+  compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:58:53.686045 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '71a9fe10-9798-4604-8ae8-3b4d298f149d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff905f70a0>]}
+00:58:53.686135 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+00:58:53.687714 [error] [Thread-2  ]: 2 of 3 ERROR creating view model dbt-practice-data.job_activities............... [[31mERROR[0m in 0.09s]
+00:58:53.692521 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.694423 [debug] [Thread-2  ]: Finished running node model.dbt_practice.job_activities
+00:58:53.696451 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants" rename to "applicants__dbt_backup"
+00:58:53.702272 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+00:58:53.705470 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.708261 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" rename to "applicants"
+00:58:53.710732 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+00:58:53.716699 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+00:58:53.720063 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.721780 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+00:58:53.725400 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+00:58:53.730326 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+00:58:53.732008 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicants__dbt_backup" cascade
+00:58:53.738301 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+00:58:53.740268 [debug] [Thread-1  ]: finished collecting timing info
+00:58:53.741535 [debug] [Thread-1  ]: On model.dbt_practice.applicants: Close
+00:58:53.742977 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '71a9fe10-9798-4604-8ae8-3b4d298f149d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90e66580>]}
+00:58:53.745292 [info ] [Thread-1  ]: 1 of 3 OK created view model dbt-practice-data.applicants....................... [[32mCREATE VIEW[0m in 0.15s]
+00:58:53.748247 [debug] [Thread-1  ]: Finished running node model.dbt_practice.applicants
+00:58:53.751198 [debug] [Thread-4  ]: Began running node model.dbt_practice.applicant_challenges
+00:58:53.754521 [info ] [Thread-4  ]: 3 of 3 START view model dbt-practice-data.applicant_challenges.................. [RUN]
+00:58:53.757335 [debug] [Thread-4  ]: Acquiring new postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.760474 [debug] [Thread-4  ]: Began compiling node model.dbt_practice.applicant_challenges
+00:58:53.763042 [debug] [Thread-4  ]: Compiling model.dbt_practice.applicant_challenges
+00:58:53.766992 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_practice.applicant_challenges"
+00:58:53.773442 [debug] [Thread-4  ]: finished collecting timing info
+00:58:53.775618 [debug] [Thread-4  ]: Began executing node model.dbt_practice.applicant_challenges
+00:58:53.778836 [debug] [Thread-4  ]: Writing runtime SQL for node "model.dbt_practice.applicant_challenges"
+00:58:53.784459 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.786506 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: BEGIN
+00:58:53.788082 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+00:58:53.795813 [debug] [Thread-4  ]: SQL status: BEGIN in 0.01 seconds
+00:58:53.797774 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.799726 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" as (
+    WITH 
+  applicants AS (SELECT * FROM "dbt-practice"."dbt-practice-data"."applicants" ),
+  seed_challenges AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."challenges" ),
+
+applicant_challenges AS (
+  SELECT
+    ROW_NUMBER () OVER (PARTITION BY applicants.applicant_id ORDER BY seed_challenges.submitted_at, applicants.applicant_id) AS ROW_NUM,
+    applicants.applicant_id,
+    applicants.age,
+    applicants.gender,
+    applicants.country,
+    applicants.last_step,
+    applicants.created_at AS application_created_at,
+    seed_challenges.submitted_at AS challenge_submitted_at,
+    seed_challenges.challenge_one_score,
+    seed_challenges.challenge_two_score,
+    seed_challenges.challenge_three_score
+  
+  FROM seed_challenges 
+  
+  INNER JOIN applicants ON seed_challenges.applicant_id = applicants.applicant_id
+
+)
+
+SELECT * FROM applicant_challenges
+  );
+00:58:53.807285 [debug] [Thread-4  ]: SQL status: CREATE VIEW in 0.0 seconds
+00:58:53.810274 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.811798 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+alter table "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" rename to "applicant_challenges"
+00:58:53.814365 [debug] [Thread-4  ]: SQL status: ALTER TABLE in 0.0 seconds
+00:58:53.816739 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+00:58:53.819014 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.820573 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+00:58:53.823179 [debug] [Thread-4  ]: SQL status: COMMIT in 0.0 seconds
+00:58:53.842234 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+00:58:53.844208 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_backup" cascade
+00:58:53.846647 [debug] [Thread-4  ]: SQL status: DROP VIEW in 0.0 seconds
+00:58:53.849427 [debug] [Thread-4  ]: finished collecting timing info
+00:58:53.851023 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: Close
+00:58:53.854130 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '71a9fe10-9798-4604-8ae8-3b4d298f149d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff923ddb80>]}
+00:58:53.856357 [info ] [Thread-4  ]: 3 of 3 OK created view model dbt-practice-data.applicant_challenges............. [[32mCREATE VIEW[0m in 0.10s]
+00:58:53.858693 [debug] [Thread-4  ]: Finished running node model.dbt_practice.applicant_challenges
+00:58:53.862349 [debug] [MainThread]: Acquiring new postgres connection "master"
+00:58:53.864861 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.867445 [debug] [MainThread]: On master: BEGIN
+00:58:53.869311 [debug] [MainThread]: Opening a new connection, currently in state closed
+00:58:53.879097 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+00:58:53.881437 [debug] [MainThread]: On master: COMMIT
+00:58:53.883335 [debug] [MainThread]: Using postgres connection "master"
+00:58:53.885509 [debug] [MainThread]: On master: COMMIT
+00:58:53.887849 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+00:58:53.889456 [debug] [MainThread]: On master: Close
+00:58:53.892068 [info ] [MainThread]: 
+00:58:53.894063 [info ] [MainThread]: Finished running 3 view models in 0.47s.
+00:58:53.897096 [debug] [MainThread]: Connection 'master' was properly closed.
+00:58:53.898833 [debug] [MainThread]: Connection 'model.dbt_practice.applicants' was properly closed.
+00:58:53.901058 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+00:58:53.902380 [debug] [MainThread]: Connection 'model.dbt_practice.applicant_challenges' was properly closed.
+00:58:53.919991 [info ] [MainThread]: 
+00:58:53.921721 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+00:58:53.924173 [info ] [MainThread]: 
+00:58:53.926068 [error] [MainThread]: [33mDatabase Error in model job_activities (models/job_activities.sql)[0m
+00:58:53.928381 [error] [MainThread]:   relation "job_activities" does not exist
+00:58:53.930615 [error] [MainThread]:   LINE 18: SELECT * FROM job_activities
+00:58:53.932821 [error] [MainThread]:                          ^
+00:58:53.934995 [error] [MainThread]:   compiled SQL at target/run/dbt_practice/models/job_activities.sql
+00:58:53.937240 [info ] [MainThread]: 
+00:58:53.939603 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+00:58:53.941855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff906103a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90610310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92373fa0>]}
+
+
+============================== 2022-04-13 01:00:00.791006 | 29bae350-2a8b-4bae-af53-1ac275789288 ==============================
+01:00:00.791006 [info ] [MainThread]: Running with dbt=1.0.3
+01:00:00.793081 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+01:00:00.795092 [debug] [MainThread]: Tracking: tracking
+01:00:00.799734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9011f880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9011fa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9011f9d0>]}
+01:00:00.850859 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+01:00:00.852935 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+01:00:00.858971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29bae350-2a8b-4bae-af53-1ac275789288', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ff9b0d0>]}
+01:00:00.878404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29bae350-2a8b-4bae-af53-1ac275789288', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9000e760>]}
+01:00:00.880035 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+01:00:00.882955 [info ] [MainThread]: 
+01:00:00.884838 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:00:00.886959 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+01:00:00.894150 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+01:00:00.897052 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+01:00:00.899327 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:00:00.910947 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+01:00:00.915122 [debug] [ThreadPool]: On list_dbt-practice: Close
+01:00:00.918752 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:00.919228 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:00.924321 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:00.927426 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:00.931422 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+01:00:00.929573 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+01:00:00.933236 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:00:00.935777 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+01:00:00.945569 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:00:00.946677 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:00:00.948134 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:00.950999 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:00.953218 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+01:00:00.955265 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+01:00:00.960471 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+01:00:00.964211 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+01:00:00.964584 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+01:00:00.966865 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+01:00:00.968845 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+01:00:00.973711 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+01:00:00.978482 [debug] [MainThread]: Using postgres connection "master"
+01:00:00.981248 [debug] [MainThread]: On master: BEGIN
+01:00:00.984003 [debug] [MainThread]: Opening a new connection, currently in state init
+01:00:00.992755 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:00:00.995825 [debug] [MainThread]: Using postgres connection "master"
+01:00:00.997657 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+01:00:01.031287 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+01:00:01.034422 [debug] [MainThread]: On master: ROLLBACK
+01:00:01.038248 [debug] [MainThread]: Using postgres connection "master"
+01:00:01.040046 [debug] [MainThread]: On master: BEGIN
+01:00:01.043002 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+01:00:01.044672 [debug] [MainThread]: On master: COMMIT
+01:00:01.046237 [debug] [MainThread]: Using postgres connection "master"
+01:00:01.047640 [debug] [MainThread]: On master: COMMIT
+01:00:01.049397 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:00:01.050747 [debug] [MainThread]: On master: Close
+01:00:01.052416 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+01:00:01.053884 [info ] [MainThread]: 
+01:00:01.059446 [debug] [Thread-1  ]: Began running node model.dbt_practice.applicants
+01:00:01.059739 [debug] [Thread-2  ]: Began running node model.dbt_practice.job_activities
+01:00:01.062252 [info ] [Thread-1  ]: 1 of 3 START view model dbt-practice-data.applicants............................ [RUN]
+01:00:01.065012 [info ] [Thread-2  ]: 2 of 3 START view model dbt-practice-data.job_activities........................ [RUN]
+01:00:01.067236 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.applicants"
+01:00:01.070326 [debug] [Thread-2  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+01:00:01.073308 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.applicants
+01:00:01.075873 [debug] [Thread-2  ]: Began compiling node model.dbt_practice.job_activities
+01:00:01.079189 [debug] [Thread-1  ]: Compiling model.dbt_practice.applicants
+01:00:01.083802 [debug] [Thread-2  ]: Compiling model.dbt_practice.job_activities
+01:00:01.088340 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.applicants"
+01:00:01.091507 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+01:00:01.098478 [debug] [Thread-1  ]: finished collecting timing info
+01:00:01.101029 [debug] [Thread-1  ]: Began executing node model.dbt_practice.applicants
+01:00:01.099812 [debug] [Thread-2  ]: finished collecting timing info
+01:00:01.115816 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.applicants"
+01:00:01.117120 [debug] [Thread-2  ]: Began executing node model.dbt_practice.job_activities
+01:00:01.122858 [debug] [Thread-2  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+01:00:01.124543 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.127222 [debug] [Thread-1  ]: On model.dbt_practice.applicants: BEGIN
+01:00:01.128502 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:00:01.129248 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+01:00:01.130864 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: BEGIN
+01:00:01.135381 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+01:00:01.138910 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+01:00:01.140944 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.142879 [debug] [Thread-2  ]: SQL status: BEGIN in 0.01 seconds
+01:00:01.145258 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:00:01.146895 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  jobactivities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activites AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM jobactivities
+  )
+
+SELECT * FROM job_activities
+  );
+01:00:01.143450 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" as (
+    WITH
+  seed_applicant_1 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ),
+  seed_applicant_2 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ),
+  seed_applicant_3 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ),
+  seed_applicant_4 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ),
+  --seed_job_activities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+  --seed_students AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."students" ),
+
+applicants AS (
+  SELECT 
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_1
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_2
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_3
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_4
+)
+SELECT * FROM applicants
+  );
+01:00:01.148961 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "job_activities" does not exist
+LINE 18: SELECT * FROM job_activities
+                       ^
+
+01:00:01.151809 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: ROLLBACK
+01:00:01.153582 [debug] [Thread-2  ]: finished collecting timing info
+01:00:01.153896 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+01:00:01.155027 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: Close
+01:00:01.160455 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.162267 [debug] [Thread-2  ]: Database Error in model job_activities (models/job_activities.sql)
+  relation "job_activities" does not exist
+  LINE 18: SELECT * FROM job_activities
+                         ^
+  compiled SQL at target/run/dbt_practice/models/job_activities.sql
+01:00:01.164066 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants" rename to "applicants__dbt_backup"
+01:00:01.166250 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29bae350-2a8b-4bae-af53-1ac275789288', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c656d90>]}
+01:00:01.168931 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:00:01.169791 [error] [Thread-2  ]: 2 of 3 ERROR creating view model dbt-practice-data.job_activities............... [[31mERROR[0m in 0.10s]
+01:00:01.172252 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.173942 [debug] [Thread-2  ]: Finished running node model.dbt_practice.job_activities
+01:00:01.176224 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" rename to "applicants"
+01:00:01.181060 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:00:01.186997 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+01:00:01.189694 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.191668 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+01:00:01.194723 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+01:00:01.199298 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:00:01.201314 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicants__dbt_backup" cascade
+01:00:01.205327 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+01:00:01.207968 [debug] [Thread-1  ]: finished collecting timing info
+01:00:01.209894 [debug] [Thread-1  ]: On model.dbt_practice.applicants: Close
+01:00:01.212274 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29bae350-2a8b-4bae-af53-1ac275789288', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c689f40>]}
+01:00:01.214120 [info ] [Thread-1  ]: 1 of 3 OK created view model dbt-practice-data.applicants....................... [[32mCREATE VIEW[0m in 0.15s]
+01:00:01.215543 [debug] [Thread-1  ]: Finished running node model.dbt_practice.applicants
+01:00:01.219089 [debug] [Thread-4  ]: Began running node model.dbt_practice.applicant_challenges
+01:00:01.221035 [info ] [Thread-4  ]: 3 of 3 START view model dbt-practice-data.applicant_challenges.................. [RUN]
+01:00:01.223835 [debug] [Thread-4  ]: Acquiring new postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.226637 [debug] [Thread-4  ]: Began compiling node model.dbt_practice.applicant_challenges
+01:00:01.228558 [debug] [Thread-4  ]: Compiling model.dbt_practice.applicant_challenges
+01:00:01.233072 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_practice.applicant_challenges"
+01:00:01.239716 [debug] [Thread-4  ]: finished collecting timing info
+01:00:01.241887 [debug] [Thread-4  ]: Began executing node model.dbt_practice.applicant_challenges
+01:00:01.244855 [debug] [Thread-4  ]: Writing runtime SQL for node "model.dbt_practice.applicant_challenges"
+01:00:01.250165 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.251758 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: BEGIN
+01:00:01.253196 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+01:00:01.260287 [debug] [Thread-4  ]: SQL status: BEGIN in 0.01 seconds
+01:00:01.262215 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.263568 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" as (
+    WITH 
+  applicants AS (SELECT * FROM "dbt-practice"."dbt-practice-data"."applicants" ),
+  seed_challenges AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."challenges" ),
+
+applicant_challenges AS (
+  SELECT
+    ROW_NUMBER () OVER (PARTITION BY applicants.applicant_id ORDER BY seed_challenges.submitted_at, applicants.applicant_id) AS ROW_NUM,
+    applicants.applicant_id,
+    applicants.age,
+    applicants.gender,
+    applicants.country,
+    applicants.last_step,
+    applicants.created_at AS application_created_at,
+    seed_challenges.submitted_at AS challenge_submitted_at,
+    seed_challenges.challenge_one_score,
+    seed_challenges.challenge_two_score,
+    seed_challenges.challenge_three_score
+  
+  FROM seed_challenges 
+  
+  INNER JOIN applicants ON seed_challenges.applicant_id = applicants.applicant_id
+
+)
+
+SELECT * FROM applicant_challenges
+  );
+01:00:01.270029 [debug] [Thread-4  ]: SQL status: CREATE VIEW in 0.0 seconds
+01:00:01.272795 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.274271 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+alter table "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" rename to "applicant_challenges"
+01:00:01.276405 [debug] [Thread-4  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:00:01.278832 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+01:00:01.280236 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.282229 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+01:00:01.284930 [debug] [Thread-4  ]: SQL status: COMMIT in 0.0 seconds
+01:00:01.304202 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:00:01.306090 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_backup" cascade
+01:00:01.308042 [debug] [Thread-4  ]: SQL status: DROP VIEW in 0.0 seconds
+01:00:01.310565 [debug] [Thread-4  ]: finished collecting timing info
+01:00:01.313460 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: Close
+01:00:01.315111 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29bae350-2a8b-4bae-af53-1ac275789288', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8c677fd0>]}
+01:00:01.316238 [info ] [Thread-4  ]: 3 of 3 OK created view model dbt-practice-data.applicant_challenges............. [[32mCREATE VIEW[0m in 0.09s]
+01:00:01.317684 [debug] [Thread-4  ]: Finished running node model.dbt_practice.applicant_challenges
+01:00:01.321111 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:00:01.323793 [debug] [MainThread]: Using postgres connection "master"
+01:00:01.326222 [debug] [MainThread]: On master: BEGIN
+01:00:01.328424 [debug] [MainThread]: Opening a new connection, currently in state closed
+01:00:01.337170 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:00:01.338810 [debug] [MainThread]: On master: COMMIT
+01:00:01.341033 [debug] [MainThread]: Using postgres connection "master"
+01:00:01.343303 [debug] [MainThread]: On master: COMMIT
+01:00:01.345214 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:00:01.346661 [debug] [MainThread]: On master: Close
+01:00:01.348129 [info ] [MainThread]: 
+01:00:01.349748 [info ] [MainThread]: Finished running 3 view models in 0.46s.
+01:00:01.352214 [debug] [MainThread]: Connection 'master' was properly closed.
+01:00:01.354377 [debug] [MainThread]: Connection 'model.dbt_practice.applicants' was properly closed.
+01:00:01.356356 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+01:00:01.358788 [debug] [MainThread]: Connection 'model.dbt_practice.applicant_challenges' was properly closed.
+01:00:01.375303 [info ] [MainThread]: 
+01:00:01.377416 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+01:00:01.379363 [info ] [MainThread]: 
+01:00:01.381381 [error] [MainThread]: [33mDatabase Error in model job_activities (models/job_activities.sql)[0m
+01:00:01.384471 [error] [MainThread]:   relation "job_activities" does not exist
+01:00:01.387424 [error] [MainThread]:   LINE 18: SELECT * FROM job_activities
+01:00:01.390779 [error] [MainThread]:                          ^
+01:00:01.393579 [error] [MainThread]:   compiled SQL at target/run/dbt_practice/models/job_activities.sql
+01:00:01.396464 [info ] [MainThread]: 
+01:00:01.399521 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+01:00:01.401932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8eed83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8eed8310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9143cd30>]}
+
+
+============================== 2022-04-13 01:00:12.043977 | 84326f55-85a4-4255-98dc-9c026f8b8ef3 ==============================
+01:00:12.043977 [info ] [MainThread]: Running with dbt=1.0.3
+01:00:12.045209 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, full_refresh=False, show=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, cls=<class 'dbt.task.seed.SeedTask'>, which='seed', rpc_method='seed')
+01:00:12.047518 [debug] [MainThread]: Tracking: tracking
+01:00:12.052832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87044820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87044ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff87044a60>]}
+01:00:12.101736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+01:00:12.104061 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+01:00:12.109654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86ebe0d0>]}
+01:00:12.129216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86f347c0>]}
+01:00:12.132197 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+01:00:12.135356 [info ] [MainThread]: 
+01:00:12.137960 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:00:12.140800 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+01:00:12.149225 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+01:00:12.152294 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+01:00:12.153930 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:00:12.164158 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+01:00:12.167688 [debug] [ThreadPool]: On list_dbt-practice: Close
+01:00:12.171430 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:12.172218 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:12.176527 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:12.179461 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:12.181373 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+01:00:12.183747 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+01:00:12.187085 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:00:12.185289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+01:00:12.195873 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:00:12.197355 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:00:12.197947 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:00:12.200215 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:00:12.202761 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+01:00:12.204866 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+01:00:12.210776 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+01:00:12.213229 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+01:00:12.213375 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+01:00:12.215969 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+01:00:12.218220 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+01:00:12.223411 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+01:00:12.228282 [debug] [MainThread]: Using postgres connection "master"
+01:00:12.230660 [debug] [MainThread]: On master: BEGIN
+01:00:12.232863 [debug] [MainThread]: Opening a new connection, currently in state init
+01:00:12.242530 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:00:12.245325 [debug] [MainThread]: Using postgres connection "master"
+01:00:12.248177 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+01:00:12.281276 [debug] [MainThread]: SQL status: SELECT 7 in 0.03 seconds
+01:00:12.284197 [debug] [MainThread]: On master: ROLLBACK
+01:00:12.286486 [debug] [MainThread]: Using postgres connection "master"
+01:00:12.288771 [debug] [MainThread]: On master: BEGIN
+01:00:12.290824 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+01:00:12.292125 [debug] [MainThread]: On master: COMMIT
+01:00:12.293865 [debug] [MainThread]: Using postgres connection "master"
+01:00:12.295642 [debug] [MainThread]: On master: COMMIT
+01:00:12.298020 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:00:12.299678 [debug] [MainThread]: On master: Close
+01:00:12.301526 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+01:00:12.303981 [info ] [MainThread]: 
+01:00:12.309268 [debug] [Thread-1  ]: Began running node seed.dbt_practice.applicants 1
+01:00:12.309375 [debug] [Thread-2  ]: Began running node seed.dbt_practice.applicants 2
+01:00:12.309644 [debug] [Thread-3  ]: Began running node seed.dbt_practice.applicants 3
+01:00:12.309846 [debug] [Thread-4  ]: Began running node seed.dbt_practice.applicants 4
+01:00:12.312762 [info ] [Thread-1  ]: 1 of 9 START seed file dbt-practice-data_seeds.applicants 1..................... [RUN]
+01:00:12.315371 [info ] [Thread-2  ]: 2 of 9 START seed file dbt-practice-data_seeds.applicants 2..................... [RUN]
+01:00:12.317335 [info ] [Thread-3  ]: 3 of 9 START seed file dbt-practice-data_seeds.applicants 3..................... [RUN]
+01:00:12.320036 [info ] [Thread-4  ]: 4 of 9 START seed file dbt-practice-data_seeds.applicants 4..................... [RUN]
+01:00:12.332404 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.dbt_practice.applicants 4"
+01:00:12.326696 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.dbt_practice.applicants 2"
+01:00:12.329592 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.dbt_practice.applicants 3"
+01:00:12.322346 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.dbt_practice.applicants 1"
+01:00:12.335041 [debug] [Thread-4  ]: Began compiling node seed.dbt_practice.applicants 4
+01:00:12.338091 [debug] [Thread-2  ]: Began compiling node seed.dbt_practice.applicants 2
+01:00:12.340430 [debug] [Thread-3  ]: Began compiling node seed.dbt_practice.applicants 3
+01:00:12.342118 [debug] [Thread-1  ]: Began compiling node seed.dbt_practice.applicants 1
+01:00:12.345013 [debug] [Thread-4  ]: finished collecting timing info
+01:00:12.347217 [debug] [Thread-2  ]: finished collecting timing info
+01:00:12.349942 [debug] [Thread-3  ]: finished collecting timing info
+01:00:12.352125 [debug] [Thread-1  ]: finished collecting timing info
+01:00:12.359344 [debug] [Thread-1  ]: Began executing node seed.dbt_practice.applicants 1
+01:00:12.356421 [debug] [Thread-2  ]: Began executing node seed.dbt_practice.applicants 2
+01:00:12.357914 [debug] [Thread-3  ]: Began executing node seed.dbt_practice.applicants 3
+01:00:12.353876 [debug] [Thread-4  ]: Began executing node seed.dbt_practice.applicants 4
+01:00:15.719010 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:00:15.798140 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: BEGIN
+01:00:15.864124 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+01:00:16.021592 [debug] [Thread-2  ]: SQL status: BEGIN in 0.16 seconds
+01:00:16.049778 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:00:16.135828 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.applicants 2"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."applicants 2"
+01:00:16.173920 [debug] [Thread-2  ]: SQL status: TRUNCATE TABLE in 0.01 seconds
+01:00:16.459176 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:00:16.562790 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: BEGIN
+01:00:16.585713 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+01:00:16.748336 [debug] [Thread-4  ]: SQL status: BEGIN in 0.16 seconds
+01:00:16.760913 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:00:16.789892 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.applicants 4"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."applicants 4"
+01:00:17.009741 [debug] [Thread-4  ]: SQL status: TRUNCATE TABLE in 0.01 seconds
+01:00:19.900115 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:00:19.941258 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: BEGIN
+01:00:20.049977 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+01:00:20.144148 [debug] [Thread-3  ]: SQL status: BEGIN in 0.09 seconds
+01:00:20.286773 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:00:20.321596 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.applicants 3"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."applicants 3"
+01:00:20.349566 [debug] [Thread-3  ]: SQL status: TRUNCATE TABLE in 0.01 seconds
+01:00:21.103998 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:00:21.133339 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: BEGIN
+01:00:21.175230 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+01:00:21.324410 [debug] [Thread-1  ]: SQL status: BEGIN in 0.15 seconds
+01:00:21.422235 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:00:21.445987 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.applicants 1"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."applicants 1"
+01:00:21.490415 [debug] [Thread-1  ]: SQL status: TRUNCATE TABLE in 0.01 seconds
+01:00:36.747003 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:00:36.802282 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:36.946349 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:00:38.025746 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:00:38.072840 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:38.192333 [debug] [Thread-4  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:00:40.409752 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:00:40.469785 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:40.595038 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:00:43.393939 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:00:43.457254 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:43.598342 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:00:57.252697 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:00:57.294108 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:57.441571 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.11 seconds
+01:00:59.112848 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:00:59.167803 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:00:59.318165 [debug] [Thread-4  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:01:01.690247 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:01:01.775661 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:01.904373 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:01:03.802996 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:01:03.827584 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:03.950248 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:01:18.855187 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:01:18.927596 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:19.052628 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:01:19.781713 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:01:19.817507 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:19.938532 [debug] [Thread-4  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:01:23.471279 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:01:23.507977 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:23.671510 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:01:24.596007 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:01:24.716166 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:24.841107 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:01:26.533442 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:01:26.556621 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:26.647969 [debug] [Thread-2  ]: SQL status: INSERT 0 3844 in 0.05 seconds
+01:01:26.685850 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.dbt_practice.applicants 2"
+01:01:26.812783 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: COMMIT
+01:01:26.861192 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.applicants 2"
+01:01:26.903120 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: COMMIT
+01:01:26.947637 [debug] [Thread-2  ]: SQL status: COMMIT in 0.02 seconds
+01:01:27.070031 [debug] [Thread-2  ]: finished collecting timing info
+01:01:27.119153 [debug] [Thread-2  ]: On seed.dbt_practice.applicants 2: Close
+01:01:27.136256 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff845abfa0>]}
+01:01:27.159468 [info ] [Thread-2  ]: 2 of 9 OK loaded seed file dbt-practice-data_seeds.applicants 2................. [[32mINSERT 33844[0m in 74.81s]
+01:01:27.228185 [debug] [Thread-2  ]: Finished running node seed.dbt_practice.applicants 2
+01:01:27.245859 [debug] [Thread-2  ]: Began running node seed.dbt_practice.challenges
+01:01:27.329962 [info ] [Thread-2  ]: 5 of 9 START seed file dbt-practice-data_seeds.challenges....................... [RUN]
+01:01:27.354500 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.dbt_practice.challenges"
+01:01:27.389218 [debug] [Thread-2  ]: Began compiling node seed.dbt_practice.challenges
+01:01:27.424696 [debug] [Thread-2  ]: finished collecting timing info
+01:01:27.453597 [debug] [Thread-2  ]: Began executing node seed.dbt_practice.challenges
+01:01:29.958573 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.challenges"
+01:01:29.981256 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: BEGIN
+01:01:30.024239 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+01:01:30.151361 [debug] [Thread-2  ]: SQL status: BEGIN in 0.13 seconds
+01:01:30.173521 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.challenges"
+01:01:30.213286 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.challenges"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."challenges"
+01:01:30.297199 [debug] [Thread-2  ]: SQL status: TRUNCATE TABLE in 0.02 seconds
+01:01:40.387477 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:01:40.446783 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:40.575565 [debug] [Thread-4  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:01:44.272302 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:01:44.345106 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:44.447433 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:01:45.024250 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:01:45.053178 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:01:45.194196 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:01:49.934679 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.challenges"
+01:01:49.975906 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."challenges" ("id", "applicant_id", "challenge_one_score", "challenge_two_score", "challenge_three_score", "submitted_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%...
+01:01:50.118224 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:02.207047 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:02:02.237228 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:02.360816 [debug] [Thread-4  ]: SQL status: INSERT 0 10000 in 0.11 seconds
+01:02:04.779297 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:02:04.795705 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:04.920886 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:02:06.169743 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:02:06.342529 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:06.461757 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.1 seconds
+01:02:10.104253 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.challenges"
+01:02:10.139302 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."challenges" ("id", "applicant_id", "challenge_one_score", "challenge_two_score", "challenge_three_score", "submitted_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%...
+01:02:10.300243 [debug] [Thread-2  ]: SQL status: INSERT 0 9660 in 0.1 seconds
+01:02:10.330066 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.dbt_practice.challenges"
+01:02:10.497001 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: COMMIT
+01:02:10.569861 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.challenges"
+01:02:10.634919 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: COMMIT
+01:02:10.682557 [debug] [Thread-2  ]: SQL status: COMMIT in 0.01 seconds
+01:02:10.754552 [debug] [Thread-2  ]: finished collecting timing info
+01:02:10.820139 [debug] [Thread-2  ]: On seed.dbt_practice.challenges: Close
+01:02:10.867388 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff67e4d8e0>]}
+01:02:10.896768 [info ] [Thread-2  ]: 5 of 9 OK loaded seed file dbt-practice-data_seeds.challenges................... [[32mINSERT 19660[0m in 43.51s]
+01:02:10.977534 [debug] [Thread-2  ]: Finished running node seed.dbt_practice.challenges
+01:02:11.013286 [debug] [Thread-2  ]: Began running node seed.dbt_practice.job activities
+01:02:11.037483 [info ] [Thread-2  ]: 6 of 9 START seed file dbt-practice-data_seeds.job activities................... [RUN]
+01:02:11.111443 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.dbt_practice.job activities"
+01:02:11.152633 [debug] [Thread-2  ]: Began compiling node seed.dbt_practice.job activities
+01:02:11.199922 [debug] [Thread-2  ]: finished collecting timing info
+01:02:11.252714 [debug] [Thread-2  ]: Began executing node seed.dbt_practice.job activities
+01:02:11.986115 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:02:12.011663 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:12.154131 [debug] [Thread-4  ]: SQL status: INSERT 0 4975 in 0.06 seconds
+01:02:12.223172 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.dbt_practice.applicants 4"
+01:02:12.300677 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:12.317151 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: BEGIN
+01:02:12.317874 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: COMMIT
+01:02:12.330414 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+01:02:12.376008 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.applicants 4"
+01:02:12.439212 [debug] [Thread-2  ]: SQL status: BEGIN in 0.11 seconds
+01:02:12.464187 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: COMMIT
+01:02:12.559716 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:12.595681 [debug] [Thread-4  ]: SQL status: COMMIT in 0.01 seconds
+01:02:12.629981 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.job activities"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."job activities"
+01:02:12.665950 [debug] [Thread-4  ]: finished collecting timing info
+01:02:12.775300 [debug] [Thread-2  ]: SQL status: TRUNCATE TABLE in 0.01 seconds
+01:02:12.798250 [debug] [Thread-4  ]: On seed.dbt_practice.applicants 4: Close
+01:02:12.848785 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff6d6dfca0>]}
+01:02:12.872498 [info ] [Thread-4  ]: 4 of 9 OK loaded seed file dbt-practice-data_seeds.applicants 4................. [[32mINSERT 54975[0m in 120.52s]
+01:02:12.957190 [debug] [Thread-4  ]: Finished running node seed.dbt_practice.applicants 4
+01:02:13.013482 [debug] [Thread-4  ]: Began running node seed.dbt_practice.participant
+01:02:13.064816 [info ] [Thread-4  ]: 7 of 9 START seed file dbt-practice-data_seeds.participant...................... [RUN]
+01:02:13.133587 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.dbt_practice.participant"
+01:02:13.211253 [debug] [Thread-4  ]: Began compiling node seed.dbt_practice.participant
+01:02:13.271860 [debug] [Thread-4  ]: finished collecting timing info
+01:02:13.300937 [debug] [Thread-4  ]: Began executing node seed.dbt_practice.participant
+01:02:13.339770 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.participant"
+01:02:13.399673 [debug] [Thread-4  ]: On seed.dbt_practice.participant: BEGIN
+01:02:13.421995 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+01:02:13.517191 [debug] [Thread-4  ]: SQL status: BEGIN in 0.1 seconds
+01:02:13.546274 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.participant"
+01:02:13.593826 [debug] [Thread-4  ]: On seed.dbt_practice.participant: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.participant"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."participant"
+01:02:13.674238 [debug] [Thread-4  ]: SQL status: TRUNCATE TABLE in 0.03 seconds
+01:02:13.700668 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.participant"
+01:02:13.736559 [debug] [Thread-4  ]: On seed.dbt_practice.participant: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."participant" ("s/n", "name", "gender") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+01:02:13.788933 [debug] [Thread-4  ]: SQL status: INSERT 0 4 in 0.01 seconds
+01:02:13.849059 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.dbt_practice.participant"
+01:02:13.913572 [debug] [Thread-4  ]: On seed.dbt_practice.participant: COMMIT
+01:02:13.935994 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.participant"
+01:02:13.982572 [debug] [Thread-4  ]: On seed.dbt_practice.participant: COMMIT
+01:02:14.065034 [debug] [Thread-4  ]: SQL status: COMMIT in 0.04 seconds
+01:02:14.100569 [debug] [Thread-4  ]: finished collecting timing info
+01:02:14.129982 [debug] [Thread-4  ]: On seed.dbt_practice.participant: Close
+01:02:14.171800 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff670870d0>]}
+01:02:14.200018 [info ] [Thread-4  ]: 7 of 9 OK loaded seed file dbt-practice-data_seeds.participant.................. [[32mINSERT 4[0m in 1.04s]
+01:02:14.232146 [debug] [Thread-4  ]: Finished running node seed.dbt_practice.participant
+01:02:14.288501 [debug] [Thread-4  ]: Began running node seed.dbt_practice.seed_a
+01:02:14.310943 [info ] [Thread-4  ]: 8 of 9 START seed file dbt-practice-data_seeds.seed_a........................... [RUN]
+01:02:14.350856 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.dbt_practice.seed_a"
+01:02:14.374178 [debug] [Thread-4  ]: Began compiling node seed.dbt_practice.seed_a
+01:02:14.403945 [debug] [Thread-4  ]: finished collecting timing info
+01:02:14.456009 [debug] [Thread-4  ]: Began executing node seed.dbt_practice.seed_a
+01:02:14.590507 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.seed_a"
+01:02:14.633448 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: BEGIN
+01:02:14.691473 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+01:02:14.736506 [debug] [Thread-4  ]: SQL status: BEGIN in 0.05 seconds
+01:02:14.782317 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.seed_a"
+01:02:14.852303 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.seed_a"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."seed_a"
+01:02:14.905999 [debug] [Thread-4  ]: SQL status: TRUNCATE TABLE in 0.02 seconds
+01:02:14.919339 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.seed_a"
+01:02:14.995900 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."seed_a" ("name", "b") values
+          (%s,%s),(%s,%s)
+      ...
+01:02:15.045081 [debug] [Thread-4  ]: SQL status: INSERT 0 2 in 0.01 seconds
+01:02:15.092939 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.dbt_practice.seed_a"
+01:02:15.209654 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: COMMIT
+01:02:15.252204 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.seed_a"
+01:02:15.323766 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: COMMIT
+01:02:15.387581 [debug] [Thread-4  ]: SQL status: COMMIT in 0.05 seconds
+01:02:15.417762 [debug] [Thread-4  ]: finished collecting timing info
+01:02:15.474851 [debug] [Thread-4  ]: On seed.dbt_practice.seed_a: Close
+01:02:15.514602 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff67d55280>]}
+01:02:15.612914 [info ] [Thread-4  ]: 8 of 9 OK loaded seed file dbt-practice-data_seeds.seed_a....................... [[32mINSERT 2[0m in 1.16s]
+01:02:15.670258 [debug] [Thread-4  ]: Finished running node seed.dbt_practice.seed_a
+01:02:15.744247 [debug] [Thread-4  ]: Began running node seed.dbt_practice.students
+01:02:15.794215 [info ] [Thread-4  ]: 9 of 9 START seed file dbt-practice-data_seeds.students......................... [RUN]
+01:02:15.829285 [debug] [Thread-4  ]: Acquiring new postgres connection "seed.dbt_practice.students"
+01:02:15.852224 [debug] [Thread-4  ]: Began compiling node seed.dbt_practice.students
+01:02:15.949317 [debug] [Thread-4  ]: finished collecting timing info
+01:02:15.966018 [debug] [Thread-4  ]: Began executing node seed.dbt_practice.students
+01:02:16.463647 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.students"
+01:02:16.492521 [debug] [Thread-4  ]: On seed.dbt_practice.students: BEGIN
+01:02:16.516359 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+01:02:16.611535 [debug] [Thread-4  ]: SQL status: BEGIN in 0.1 seconds
+01:02:16.647628 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.students"
+01:02:16.805706 [debug] [Thread-4  ]: On seed.dbt_practice.students: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "seed.dbt_practice.students"} */
+truncate table "dbt-practice"."dbt-practice-data_seeds"."students"
+01:02:16.894150 [debug] [Thread-4  ]: SQL status: TRUNCATE TABLE in 0.05 seconds
+01:02:24.820497 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:02:24.875640 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:24.982765 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:25.354461 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:25.399556 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."job activities" ("id", "student_id", "category", "created_at") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s...
+01:02:25.537421 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:25.643758 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:02:25.650161 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.students"
+01:02:25.679213 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:25.766716 [debug] [Thread-4  ]: On seed.dbt_practice.students: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."students" ("id", "country", "gender", "birthday", "starting_date", "on_stipend", "schedule", "primary_status", "secondary_status", "created_at", "graduation_date", "program_end_date") values
+          (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s...
+01:02:25.899189 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:25.929559 [debug] [Thread-4  ]: SQL status: INSERT 0 2195 in 0.06 seconds
+01:02:25.947700 [debug] [Thread-4  ]: Writing runtime SQL for node "seed.dbt_practice.students"
+01:02:26.045811 [debug] [Thread-4  ]: On seed.dbt_practice.students: COMMIT
+01:02:26.147010 [debug] [Thread-4  ]: Using postgres connection "seed.dbt_practice.students"
+01:02:26.253165 [debug] [Thread-4  ]: On seed.dbt_practice.students: COMMIT
+01:02:26.300094 [debug] [Thread-4  ]: SQL status: COMMIT in 0.01 seconds
+01:02:26.340640 [debug] [Thread-4  ]: finished collecting timing info
+01:02:26.399585 [debug] [Thread-4  ]: On seed.dbt_practice.students: Close
+01:02:26.441333 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff66cd6a30>]}
+01:02:26.488364 [info ] [Thread-4  ]: 9 of 9 OK loaded seed file dbt-practice-data_seeds.students..................... [[32mINSERT 2195[0m in 10.61s]
+01:02:26.585853 [debug] [Thread-4  ]: Finished running node seed.dbt_practice.students
+01:02:36.155460 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:36.166794 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."job activities" ("id", "student_id", "category", "created_at") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s...
+01:02:36.236297 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.06 seconds
+01:02:40.674572 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:02:40.699418 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:40.801219 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:41.030919 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:02:41.049529 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:41.170408 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:46.460613 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:46.515089 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."job activities" ("id", "student_id", "category", "created_at") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s...
+01:02:46.622826 [debug] [Thread-2  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:02:55.410113 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:55.427523 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."job activities" ("id", "student_id", "category", "created_at") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s...
+01:02:55.495316 [debug] [Thread-2  ]: SQL status: INSERT 0 8808 in 0.05 seconds
+01:02:55.520545 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.dbt_practice.job activities"
+01:02:55.562047 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: COMMIT
+01:02:55.605047 [debug] [Thread-2  ]: Using postgres connection "seed.dbt_practice.job activities"
+01:02:55.623550 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: COMMIT
+01:02:55.716989 [debug] [Thread-2  ]: SQL status: COMMIT in 0.04 seconds
+01:02:55.741105 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:02:55.753018 [debug] [Thread-2  ]: finished collecting timing info
+01:02:55.766178 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:55.779182 [debug] [Thread-2  ]: On seed.dbt_practice.job activities: Close
+01:02:55.854941 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff671cbdf0>]}
+01:02:55.868204 [info ] [Thread-2  ]: 6 of 9 OK loaded seed file dbt-practice-data_seeds.job activities............... [[32mINSERT 38808[0m in 44.74s]
+01:02:55.887898 [debug] [Thread-2  ]: Finished running node seed.dbt_practice.job activities
+01:02:55.895143 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:02:56.428398 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:02:56.441779 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:02:56.539085 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:03:05.995308 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:03:06.009388 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:06.103288 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:03:06.567128 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:06.584163 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:06.688408 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:03:16.285183 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:03:16.299080 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:16.400765 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:03:16.769583 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:16.783031 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:16.886210 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:03:26.509498 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:03:26.528026 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:26.625232 [debug] [Thread-3  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:03:26.930131 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:26.942656 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:27.042447 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.08 seconds
+01:03:34.098071 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:03:34.116741 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:34.201911 [debug] [Thread-3  ]: SQL status: INSERT 0 7474 in 0.07 seconds
+01:03:34.215437 [debug] [Thread-3  ]: Writing runtime SQL for node "seed.dbt_practice.applicants 3"
+01:03:34.252593 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: COMMIT
+01:03:34.264870 [debug] [Thread-3  ]: Using postgres connection "seed.dbt_practice.applicants 3"
+01:03:34.277669 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: COMMIT
+01:03:34.298986 [debug] [Thread-3  ]: SQL status: COMMIT in 0.01 seconds
+01:03:34.311474 [debug] [Thread-3  ]: finished collecting timing info
+01:03:34.323486 [debug] [Thread-3  ]: On seed.dbt_practice.applicants 3: Close
+01:03:34.341154 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8803c850>]}
+01:03:34.358937 [info ] [Thread-3  ]: 3 of 9 OK loaded seed file dbt-practice-data_seeds.applicants 3................. [[32mINSERT 117474[0m in 202.01s]
+01:03:34.376024 [debug] [Thread-3  ]: Finished running node seed.dbt_practice.applicants 3
+01:03:35.692552 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:35.694487 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:35.790353 [debug] [Thread-1  ]: SQL status: INSERT 0 10000 in 0.09 seconds
+01:03:38.685899 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:38.688413 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: 
+          insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ("id", "last_step", "country", "gender", "age", "created_at") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%...
+01:03:38.750175 [debug] [Thread-1  ]: SQL status: INSERT 0 5716 in 0.06 seconds
+01:03:38.753856 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.dbt_practice.applicants 1"
+01:03:38.765014 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: COMMIT
+01:03:38.766531 [debug] [Thread-1  ]: Using postgres connection "seed.dbt_practice.applicants 1"
+01:03:38.768396 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: COMMIT
+01:03:38.771521 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+01:03:38.773628 [debug] [Thread-1  ]: finished collecting timing info
+01:03:38.775562 [debug] [Thread-1  ]: On seed.dbt_practice.applicants 1: Close
+01:03:38.777888 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84326f55-85a4-4255-98dc-9c026f8b8ef3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff5f4e06a0>]}
+01:03:38.779984 [info ] [Thread-1  ]: 1 of 9 OK loaded seed file dbt-practice-data_seeds.applicants 1................. [[32mINSERT 125716[0m in 206.46s]
+01:03:38.782553 [debug] [Thread-1  ]: Finished running node seed.dbt_practice.applicants 1
+01:03:38.785423 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:03:38.787083 [debug] [MainThread]: Using postgres connection "master"
+01:03:38.788737 [debug] [MainThread]: On master: BEGIN
+01:03:38.790380 [debug] [MainThread]: Opening a new connection, currently in state closed
+01:03:38.802536 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:03:38.804946 [debug] [MainThread]: On master: COMMIT
+01:03:38.806701 [debug] [MainThread]: Using postgres connection "master"
+01:03:38.808162 [debug] [MainThread]: On master: COMMIT
+01:03:38.810535 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:03:38.812616 [debug] [MainThread]: On master: Close
+01:03:38.815383 [info ] [MainThread]: 
+01:03:38.817389 [info ] [MainThread]: Finished running 9 seeds in 206.68s.
+01:03:38.820073 [debug] [MainThread]: Connection 'master' was properly closed.
+01:03:38.822426 [debug] [MainThread]: Connection 'seed.dbt_practice.applicants 1' was properly closed.
+01:03:38.824615 [debug] [MainThread]: Connection 'seed.dbt_practice.job activities' was properly closed.
+01:03:38.827840 [debug] [MainThread]: Connection 'seed.dbt_practice.applicants 3' was properly closed.
+01:03:38.830503 [debug] [MainThread]: Connection 'seed.dbt_practice.students' was properly closed.
+01:03:38.848528 [info ] [MainThread]: 
+01:03:38.851189 [info ] [MainThread]: [32mCompleted successfully[0m
+01:03:38.853161 [info ] [MainThread]: 
+01:03:38.855401 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+01:03:38.857555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86e35880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff85de7f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff845cfee0>]}
+
+
+============================== 2022-04-13 01:04:00.587165 | 60163748-42d7-4f1f-ab2a-763d8e1247a7 ==============================
+01:04:00.587165 [info ] [MainThread]: Running with dbt=1.0.3
+01:04:00.588671 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/usr/dbt_app/docker_creds', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+01:04:00.591760 [debug] [MainThread]: Tracking: tracking
+01:04:00.596187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8397f850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8397f5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8397f610>]}
+01:04:00.651253 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+01:04:00.653725 [debug] [MainThread]: Partial parsing: updated file: dbt_practice://models/job_activities.sql
+01:04:00.661836 [debug] [MainThread]: 1699: static parser successfully parsed job_activities.sql
+01:04:00.683052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '60163748-42d7-4f1f-ab2a-763d8e1247a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff82fbef10>]}
+01:04:00.700983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '60163748-42d7-4f1f-ab2a-763d8e1247a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83850940>]}
+01:04:00.702781 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 9 seed files, 0 sources, 0 exposures, 0 metrics
+01:04:00.705706 [info ] [MainThread]: 
+01:04:00.707455 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:04:00.709731 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice"
+01:04:00.716698 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice"
+01:04:00.719105 [debug] [ThreadPool]: On list_dbt-practice: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice"} */
+
+    select distinct nspname from pg_namespace
+  
+01:04:00.721704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:04:00.732666 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+01:04:00.736205 [debug] [ThreadPool]: On list_dbt-practice: Close
+01:04:00.739653 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:04:00.740444 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt-practice_dbt-practice-data"
+01:04:00.744958 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:04:00.747780 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:04:00.749554 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: BEGIN
+01:04:00.753089 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+01:04:00.751816 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: BEGIN
+01:04:00.756729 [debug] [ThreadPool]: Opening a new connection, currently in state init
+01:04:00.760466 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:04:00.761949 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data_seeds"
+01:04:00.763436 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data_seeds"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data_seeds'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data_seeds'
+  
+01:04:00.763729 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+01:04:00.766992 [debug] [ThreadPool]: Using postgres connection "list_dbt-practice_dbt-practice-data"
+01:04:00.768777 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "list_dbt-practice_dbt-practice-data"} */
+select
+      'dbt-practice' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt-practice-data'
+    union all
+    select
+      'dbt-practice' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt-practice-data'
+  
+01:04:00.768959 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.0 seconds
+01:04:00.774865 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: ROLLBACK
+01:04:00.774967 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+01:04:00.777142 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data_seeds: Close
+01:04:00.779894 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: ROLLBACK
+01:04:00.784664 [debug] [ThreadPool]: On list_dbt-practice_dbt-practice-data: Close
+01:04:00.789720 [debug] [MainThread]: Using postgres connection "master"
+01:04:00.791711 [debug] [MainThread]: On master: BEGIN
+01:04:00.793642 [debug] [MainThread]: Opening a new connection, currently in state init
+01:04:00.801933 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:04:00.803882 [debug] [MainThread]: Using postgres connection "master"
+01:04:00.806864 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+01:04:00.846401 [debug] [MainThread]: SQL status: SELECT 7 in 0.04 seconds
+01:04:00.849415 [debug] [MainThread]: On master: ROLLBACK
+01:04:00.851958 [debug] [MainThread]: Using postgres connection "master"
+01:04:00.853997 [debug] [MainThread]: On master: BEGIN
+01:04:00.856558 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+01:04:00.858858 [debug] [MainThread]: On master: COMMIT
+01:04:00.860938 [debug] [MainThread]: Using postgres connection "master"
+01:04:00.863227 [debug] [MainThread]: On master: COMMIT
+01:04:00.866399 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:04:00.868221 [debug] [MainThread]: On master: Close
+01:04:00.870281 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+01:04:00.871821 [info ] [MainThread]: 
+01:04:00.877071 [debug] [Thread-1  ]: Began running node model.dbt_practice.applicants
+01:04:00.877269 [debug] [Thread-2  ]: Began running node model.dbt_practice.job_activities
+01:04:00.880227 [info ] [Thread-1  ]: 1 of 3 START view model dbt-practice-data.applicants............................ [RUN]
+01:04:00.882481 [info ] [Thread-2  ]: 2 of 3 START view model dbt-practice-data.job_activities........................ [RUN]
+01:04:00.888039 [debug] [Thread-2  ]: Acquiring new postgres connection "model.dbt_practice.job_activities"
+01:04:00.885224 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_practice.applicants"
+01:04:00.891065 [debug] [Thread-2  ]: Began compiling node model.dbt_practice.job_activities
+01:04:00.894230 [debug] [Thread-1  ]: Began compiling node model.dbt_practice.applicants
+01:04:00.896797 [debug] [Thread-2  ]: Compiling model.dbt_practice.job_activities
+01:04:00.899635 [debug] [Thread-1  ]: Compiling model.dbt_practice.applicants
+01:04:00.903840 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_practice.job_activities"
+01:04:00.908099 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_practice.applicants"
+01:04:00.915511 [debug] [Thread-2  ]: finished collecting timing info
+01:04:00.917037 [debug] [Thread-1  ]: finished collecting timing info
+01:04:00.917920 [debug] [Thread-2  ]: Began executing node model.dbt_practice.job_activities
+01:04:00.919165 [debug] [Thread-1  ]: Began executing node model.dbt_practice.applicants
+01:04:00.933869 [debug] [Thread-2  ]: Writing runtime SQL for node "model.dbt_practice.job_activities"
+01:04:00.935907 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_practice.applicants"
+01:04:00.942487 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:04:00.944353 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: BEGIN
+01:04:00.945966 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+01:04:00.944848 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:00.950550 [debug] [Thread-1  ]: On model.dbt_practice.applicants: BEGIN
+01:04:00.952601 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+01:04:00.954516 [debug] [Thread-2  ]: SQL status: BEGIN in 0.01 seconds
+01:04:00.956797 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:04:00.958511 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+
+  create view "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" as (
+    WITH
+  jobactivities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+
+  job_activities AS (
+
+    SELECT
+      id AS unique_id,
+      student_id,
+      category,
+      created_at
+    
+    FROM jobactivities
+  )
+
+SELECT * FROM job_activities
+  );
+01:04:00.960134 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+01:04:00.963002 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:00.963106 [debug] [Thread-2  ]: SQL status: CREATE VIEW in 0.0 seconds
+01:04:00.964819 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" as (
+    WITH
+  seed_applicant_1 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 1" ),
+  seed_applicant_2 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 2" ),
+  seed_applicant_3 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ),
+  seed_applicant_4 AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."applicants 4" ),
+  --seed_job_activities AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."job activities" ),
+  --seed_students AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."students" ),
+
+applicants AS (
+  SELECT 
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_1
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_2
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_3
+  UNION ALL
+  SELECT
+    id AS applicant_id,
+    last_step,
+    country,
+    gender,
+    age,
+    created_at::DATE 
+  FROM seed_applicant_4
+)
+SELECT * FROM applicants
+  );
+01:04:00.988122 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:04:00.991272 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+alter table "dbt-practice"."dbt-practice-data"."job_activities__dbt_tmp" rename to "job_activities"
+01:04:00.993832 [debug] [Thread-2  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:04:00.998603 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: COMMIT
+01:04:00.998700 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+01:04:01.000507 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:04:01.003670 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:01.005496 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: COMMIT
+01:04:01.007716 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants" rename to "applicants__dbt_backup"
+01:04:01.010422 [debug] [Thread-2  ]: SQL status: COMMIT in 0.0 seconds
+01:04:01.012552 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:04:01.015501 [debug] [Thread-2  ]: Using postgres connection "model.dbt_practice.job_activities"
+01:04:01.018405 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:01.020002 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.job_activities"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."job_activities__dbt_backup" cascade
+01:04:01.021448 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+alter table "dbt-practice"."dbt-practice-data"."applicants__dbt_tmp" rename to "applicants"
+01:04:01.024153 [debug] [Thread-2  ]: SQL status: DROP VIEW in 0.0 seconds
+01:04:01.026362 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:04:01.027963 [debug] [Thread-2  ]: finished collecting timing info
+01:04:01.029859 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+01:04:01.033667 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:01.031752 [debug] [Thread-2  ]: On model.dbt_practice.job_activities: Close
+01:04:01.035648 [debug] [Thread-1  ]: On model.dbt_practice.applicants: COMMIT
+01:04:01.038100 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60163748-42d7-4f1f-ab2a-763d8e1247a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81f27130>]}
+01:04:01.040101 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+01:04:01.041799 [info ] [Thread-2  ]: 2 of 3 OK created view model dbt-practice-data.job_activities................... [[32mCREATE VIEW[0m in 0.15s]
+01:04:01.044449 [debug] [Thread-1  ]: Using postgres connection "model.dbt_practice.applicants"
+01:04:01.047029 [debug] [Thread-2  ]: Finished running node model.dbt_practice.job_activities
+01:04:01.049175 [debug] [Thread-1  ]: On model.dbt_practice.applicants: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicants"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicants__dbt_backup" cascade
+01:04:01.057369 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+01:04:01.060056 [debug] [Thread-1  ]: finished collecting timing info
+01:04:01.061483 [debug] [Thread-1  ]: On model.dbt_practice.applicants: Close
+01:04:01.063803 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60163748-42d7-4f1f-ab2a-763d8e1247a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff82f84820>]}
+01:04:01.065780 [info ] [Thread-1  ]: 1 of 3 OK created view model dbt-practice-data.applicants....................... [[32mCREATE VIEW[0m in 0.18s]
+01:04:01.068191 [debug] [Thread-1  ]: Finished running node model.dbt_practice.applicants
+01:04:01.071667 [debug] [Thread-4  ]: Began running node model.dbt_practice.applicant_challenges
+01:04:01.073946 [info ] [Thread-4  ]: 3 of 3 START view model dbt-practice-data.applicant_challenges.................. [RUN]
+01:04:01.076563 [debug] [Thread-4  ]: Acquiring new postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.078984 [debug] [Thread-4  ]: Began compiling node model.dbt_practice.applicant_challenges
+01:04:01.081258 [debug] [Thread-4  ]: Compiling model.dbt_practice.applicant_challenges
+01:04:01.085841 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_practice.applicant_challenges"
+01:04:01.091982 [debug] [Thread-4  ]: finished collecting timing info
+01:04:01.094140 [debug] [Thread-4  ]: Began executing node model.dbt_practice.applicant_challenges
+01:04:01.097404 [debug] [Thread-4  ]: Writing runtime SQL for node "model.dbt_practice.applicant_challenges"
+01:04:01.103886 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.105824 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: BEGIN
+01:04:01.107763 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+01:04:01.115617 [debug] [Thread-4  ]: SQL status: BEGIN in 0.01 seconds
+01:04:01.117598 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.119555 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+
+  create view "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" as (
+    WITH 
+  applicants AS (SELECT * FROM "dbt-practice"."dbt-practice-data"."applicants" ),
+  seed_challenges AS ( SELECT * FROM "dbt-practice"."dbt-practice-data_seeds"."challenges" ),
+
+applicant_challenges AS (
+  SELECT
+    ROW_NUMBER () OVER (PARTITION BY applicants.applicant_id ORDER BY seed_challenges.submitted_at, applicants.applicant_id) AS ROW_NUM,
+    applicants.applicant_id,
+    applicants.age,
+    applicants.gender,
+    applicants.country,
+    applicants.last_step,
+    applicants.created_at AS application_created_at,
+    seed_challenges.submitted_at AS challenge_submitted_at,
+    seed_challenges.challenge_one_score,
+    seed_challenges.challenge_two_score,
+    seed_challenges.challenge_three_score
+  
+  FROM seed_challenges 
+  
+  INNER JOIN applicants ON seed_challenges.applicant_id = applicants.applicant_id
+
+)
+
+SELECT * FROM applicant_challenges
+  );
+01:04:01.125002 [debug] [Thread-4  ]: SQL status: CREATE VIEW in 0.0 seconds
+01:04:01.127974 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.130440 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+alter table "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_tmp" rename to "applicant_challenges"
+01:04:01.132535 [debug] [Thread-4  ]: SQL status: ALTER TABLE in 0.0 seconds
+01:04:01.134568 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+01:04:01.136394 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.138360 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: COMMIT
+01:04:01.140450 [debug] [Thread-4  ]: SQL status: COMMIT in 0.0 seconds
+01:04:01.142647 [debug] [Thread-4  ]: Using postgres connection "model.dbt_practice.applicant_challenges"
+01:04:01.144583 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "my_package", "target_name": "dev", "node_id": "model.dbt_practice.applicant_challenges"} */
+drop view if exists "dbt-practice"."dbt-practice-data"."applicant_challenges__dbt_backup" cascade
+01:04:01.147182 [debug] [Thread-4  ]: SQL status: DROP VIEW in 0.0 seconds
+01:04:01.149165 [debug] [Thread-4  ]: finished collecting timing info
+01:04:01.150876 [debug] [Thread-4  ]: On model.dbt_practice.applicant_challenges: Close
+01:04:01.152771 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60163748-42d7-4f1f-ab2a-763d8e1247a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff81efb5e0>]}
+01:04:01.154472 [info ] [Thread-4  ]: 3 of 3 OK created view model dbt-practice-data.applicant_challenges............. [[32mCREATE VIEW[0m in 0.08s]
+01:04:01.156952 [debug] [Thread-4  ]: Finished running node model.dbt_practice.applicant_challenges
+01:04:01.159849 [debug] [MainThread]: Acquiring new postgres connection "master"
+01:04:01.162441 [debug] [MainThread]: Using postgres connection "master"
+01:04:01.165214 [debug] [MainThread]: On master: BEGIN
+01:04:01.167554 [debug] [MainThread]: Opening a new connection, currently in state closed
+01:04:01.175280 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+01:04:01.176755 [debug] [MainThread]: On master: COMMIT
+01:04:01.177988 [debug] [MainThread]: Using postgres connection "master"
+01:04:01.179518 [debug] [MainThread]: On master: COMMIT
+01:04:01.181119 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+01:04:01.182662 [debug] [MainThread]: On master: Close
+01:04:01.184257 [info ] [MainThread]: 
+01:04:01.186410 [info ] [MainThread]: Finished running 3 view models in 0.48s.
+01:04:01.189149 [debug] [MainThread]: Connection 'master' was properly closed.
+01:04:01.191203 [debug] [MainThread]: Connection 'model.dbt_practice.job_activities' was properly closed.
+01:04:01.193073 [debug] [MainThread]: Connection 'model.dbt_practice.applicants' was properly closed.
+01:04:01.194817 [debug] [MainThread]: Connection 'model.dbt_practice.applicant_challenges' was properly closed.
+01:04:01.210848 [info ] [MainThread]: 
+01:04:01.213144 [info ] [MainThread]: [32mCompleted successfully[0m
+01:04:01.215722 [info ] [MainThread]: 
+01:04:01.217996 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+01:04:01.220183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff838796a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8395d220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff83960c10>]}

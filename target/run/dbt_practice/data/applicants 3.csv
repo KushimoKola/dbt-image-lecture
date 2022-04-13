@@ -1,7 +1,5 @@
 
-    
-    create table "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id" integer,"last_step" text,"country" text,"gender" text,"age" text,"created_at" timestamp without time zone)
-  ;
+    truncate table "dbt-practice"."dbt-practice-data_seeds"."applicants 3";
     -- dbt seed --
     
           insert into "dbt-practice"."dbt-practice-data_seeds"."applicants 3" ("id", "last_step", "country", "gender", "age", "created_at") values
