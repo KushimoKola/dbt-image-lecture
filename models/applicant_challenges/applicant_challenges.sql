@@ -4,7 +4,7 @@ WITH
 
 applicant_challenges AS (
   SELECT
-    ROW_NUMBER () OVER (PARTITION BY applicants.applicant_id ORDER BY seed_challenges.submitted_at, applicants.applicant_id) AS ROW_NUM,
+    ROW_NUMBER () OVER (PARTITION BY applicants.applicant_id ORDER BY seed_challenges.submitted_at, applicants.applicant_id) AS row_num,
     applicants.applicant_id,
     applicants.age,
     applicants.gender,
