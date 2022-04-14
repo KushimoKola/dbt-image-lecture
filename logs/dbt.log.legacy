@@ -329,3 +329,5 @@
 2022-04-13 01:00:12.125564 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
 2022-04-13 01:02:14.560211 (Thread-4): Column 1 has no name. Using "b".
 2022-04-13 01:04:00.698075 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-04-14 04:08:57.468297 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-04-14 04:08:57.511915 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
