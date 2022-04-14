@@ -1,7 +1,5 @@
 
-    
-    create table "dbt-practice"."dbt-practice-data_seeds"."challenges" ("id" integer,"applicant_id" integer,"challenge_one_score" integer,"challenge_two_score" integer,"challenge_three_score" integer,"submitted_at" timestamp without time zone)
-  ;
+    truncate table "dbt-practice"."dbt-practice-data_seeds"."challenges";
     -- dbt seed --
     
           insert into "dbt-practice"."dbt-practice-data_seeds"."challenges" ("id", "applicant_id", "challenge_one_score", "challenge_two_score", "challenge_three_score", "submitted_at") values
